@@ -15,7 +15,7 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   final _pageController = PageController(
     initialPage: 1,
-    keepPage: true,
+    keepPage: true, //not sure
   );
 
   @override
@@ -43,8 +43,8 @@ class _HomeScreenState extends State<HomeScreen> {
           controller: _pageController,
           children: const [
             SettingsPage(),
-            AllAppsPage(),
             HomePage(),
+            AllAppsPage(),
           ],
         ),
       ),
